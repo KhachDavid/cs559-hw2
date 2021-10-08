@@ -8,26 +8,26 @@ class GenericObject {
         this.name = name
     }
 
-    assemble(g) {
+    assemble(context) {
         // This method is meant to be abstract and must be
         // OVERRIDDEN in any actual object in the scene graph.
         // It is not meant to be called; it is called by draw().
         throw "doDraw not implemented in GenericObject"
     }
 
-    draw(g) {
+    draw(context) {
         // This method should be CALLED to draw the object
         // represented by this GenericObject.  It should NOT
         // ordinarily be overridden in subclasses.
-        ctx.save();
+        context.save();
         if (this.fillColor) {
-            g.fillStyle = this.fillColor;
+            context.fillStyle = this.fillColor;
         }
         if (this.strokeColor) {
-            g.strokeStyle = this.strokeColor;
+            context.strokeStyle = this.strokeColor;
         }
-        this.assemble(g);
-        ctx.restore();
+        this.assemble(context);
+        context.restore();
     }
 
     setFillColor(color) {
