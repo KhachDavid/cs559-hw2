@@ -1,0 +1,7 @@
+const moonColor = "#F4F6F0"
+const jungleColor = "#29AB87"
+const trafficLineColor = "#DA530A"
+const asphaltColor = "#646496"
+const gradientColor1 = "#297fb9"
+const gradientColor2 = "#6dd4fa"
+const sunEdgeColor = "#B40000"
