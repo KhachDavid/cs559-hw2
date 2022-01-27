@@ -72,9 +72,9 @@ BasicGeometryObject - contains the basic geometry objects that are used in the a
 
 The way the app flows is the setup() function is called from the main script. The setup calls a helper function which initializes the objects described above. Then the setup function creates the main node of the application, which is the variable scene and adds the objects initialized by the helper function to the main node. Here is a quick demo!
 
-[Link]
-⋮
+[Link] ⋮
 [1]: https://cs559hw2.herokuapp.com/
 
 [2]: https://www.youtube.com/watch?v=fJvBX39iR9E&ab_channel=DAVITKHACHATRYAN
+
 
